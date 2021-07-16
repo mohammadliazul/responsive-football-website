@@ -1,0 +1,417 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+}
+a:hover{
+    color: aqua;
+}
+
+/*--------- header start --------------*/
+header{
+    height: 677px;
+    background: #2D25A0;
+    margin-bottom: 70px;
+    color: #FFFFFF;
+}
+header > nav{
+    display: flex;
+    justify-content: space-around;
+    height: 44px;
+    padding-top: 42px;
+    padding-bottom: 49px;
+}
+.check-button{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: none;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    
+}
+.left-nav-items{
+    margin-right: 25px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a, .login a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+nav ul li a:hover{
+    color: #E02C6D;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 120px;
+    height: 44px;
+    background: #E02C6D;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/*-------- banner ----------------*/
+
+.banner-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.banner-img:hover{
+    transform: scale(1.2);
+  }
+.banner-img{
+    width: 556px;
+    height: 438px;
+    transition: transform 600ms linear;
+    cursor:zoom-in;
+}
+
+#banner-details{
+    margin-top: 0;
+    margin-bottom: 170px;
+}
+
+.banner-items h1{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+
+.live-watch{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 44px;
+    width: 168px;
+    background: #E02C6D;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/*----------------
+     start main
+------------------ */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*------------------------ players blogs section ---------------------*/
+ .players-blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.blog-box{
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+}
+.player-blog{
+    width: 300px;
+    height: 426px;
+    margin: 15px 15px 33px 15px;
+}
+.thumnail img{
+    width: 300px;
+    height: 256px;
+}
+.player-info{
+    width: 300px;
+    height: 154px;
+}
+.player-name{
+    font-size: 28px;
+    line-height: 40px;
+    font-weight:bold;
+    color: #18191F;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.about-player{
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 26px;
+    height: 104px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+.copa h1{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #0A0826;
+}
+
+/*------------------------highlights section --------------------------*/
+
+.highlights-container{
+    margin-top: 192px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+
+}
+.highlights-info{
+    width: 469px;
+    height: 309px;
+}
+
+.highlights-header{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+}
+.highlights-info p{
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 26px;
+    height: 104px;
+    font-weight: 400;
+    color: #0A0826;
+}
+.watch-now{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 44px;
+    width: 168px;
+    background: #E02C6D;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+iframe{
+    width: 513px;
+    height: 400px;
+}
+/*---------------------ranking section ----------------------*/
+.ranking-container{
+    height: 300px;
+    padding: 100px 50px 150px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    margin: 150px 0px 0px 0px;
+    background-color: rgb(168, 229, 253);
+    color: #000000;
+}
+.rank-items{
+    align-items: center;
+    justify-content: space-between;
+}
+table{
+    border-collapse: collapse;
+    box-shadow: 0 0 10px 5px rgb(81, 131, 151);
+    background-color: rgb(231, 237, 240);
+}
+caption h3{
+    font-weight: 900px;
+    color: #000000;
+}
+tr{
+    border: 2px solid skyblue;
+}
+td,
+th{
+    text-align: center;
+    justify-content: center;
+}
+td > img{
+    height: 32px;
+    padding-top: 5px;
+}
+/*-------------------
+    main end
+--------------------- */
+
+/*-------------------
+    footer start
+--------------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin-top: 63px;
+    margin-bottom: 50px;
+  }
+.logo{
+    width: 483px;
+    height: 110px;
+}
+.social-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    width: 170px;
+    height: 32px;
+}
+.social-icon > a{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #6C6C6C;
+}
+.social-icon > a:hover{
+    color: #E02C6D;
+}
+footer > p{
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: right;
+color: #000000;
+
+}
+
+/*-------------------
+     footer end
+--------------------- */
+
+
+
+/*-------------------------------------------
+                 Medea Queries
+--------------------------------------------- */
+
+/* ---------Mobile Devices--------------*/
+@media only screen and (max-width: 688px) {
+
+    header{
+        height: 200%;
+        margin-bottom: 30px;
+    }
+    nav{
+        padding-bottom: 0;
+        padding-top: 30;
+    }
+    .check-button{
+        display: block;
+    }
+    .fa-bars{
+        padding-right: 125px;
+    }
+    
+    nav ul{
+        width: 100%;
+        height: auto;
+        background-color: steelblue;
+        position: fixed;
+        top: 85px;
+        left: -100%;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0px;
+        line-height: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .nav-items, .banner-area{
+        flex-direction: column;
+    }
+    .banner-img{
+        margin: 5px;
+        width: 90%;
+        height: auto;
+    }
+    #banner-details{
+        margin-bottom: 60px;
+    }
+     
+    .players-blog{
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+    }
+    .highlights-container{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px;
+    }
+    .ranking-container{
+        margin: 10px 0;
+        padding: 0;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px;
+    }
+    .ranking-info{
+        margin: 20px;
+    }
+    .highlights-info{
+        width: 100%;
+        height: auto;
+    }
+    iframe{
+        width: 100%;
+        height: 350px;
+    }
+    footer{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .logo{
+        width: 100%;
+        height: auto;
+    }
+
+}
